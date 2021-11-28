@@ -1,0 +1,60 @@
+% M.ahmadi 1400.09.07
+% @Tex_Ahmadi
+\documentclass{beamer}
+\usetheme{Warsaw}
+%\usetheme{Ilmenau}
+
+\usefonttheme{serif,professionalfonts}
+\usepackage{xepersian}
+\settextfont{Yas}
+\setdigitfont{Yas}
+\raggedleft
+
+%حل مشکل قرار گرفتن فرمول ریاضی در بلوک‌ها
+% سه تا راه حل دارد
+%\input{command-Ahmadi}
+
+%%%%
+\title{یک اسلاید نمونه}
+\subtitle{زیرعنوان اسلاید}
+\author{مجتبیٰ احمدی}
+
+\institute[پیام‌نو‌ر مشگین شهر]{دانشگاه: پیام‌نو‌ر مشگین شهر}
+\date{\today}
+%\date{28 بهمن 1395}
+%%%%%%%%%%
+
+\setbeamertemplate{title page}[default]
+\setbeamertemplate{blocks}[default]
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+\section{عنوان بخش}
+\begin{frame}
+این یک اسلاید هست.
+\begin{block}{عنوان بلوک}
+متن برای تست
+\[
+\sin^2 x+\cos^2 x=1 
+\]
+یا 
+\begin{equation}
+\sin^2 x+\cos^2 x=1 
+\end{equation}
+\end{block}
+\begin{alertblock}{تست عنوان}
+\begin{equation*}
+|x|=
+\begin{cases}
+x & x\geq 0\\
+-x & x<0
+\end{cases}
+\end{equation*}
+\end{alertblock}
+
+\end{frame}
+
+\end{document}
